@@ -56,7 +56,7 @@ var changeFuente = ()=> {
         console.log(elements)
         for (let index = 0; index < elements.length; index++) {
             const element = elements[index];
-            element.classList.add("medium");
+            element.classList.add("small");
             element.classList.remove("large");
     }
     alert("hola")
