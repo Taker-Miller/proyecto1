@@ -1,4 +1,4 @@
-// script.js
+ // script.js
 var changeContraste = () => {
     let btn = document.getElementById("btnContraste");
     let estado = btn.value;
@@ -21,24 +21,27 @@ var changeFuente = () => {
     if (estado == '0') {
         btn.value = '1';
         let elements = document.getElementsByClassName("small");
-        for (let index = 0; index < elements.length; index++) {
-            const element = elements[index];
+        const largo = elements.length;
+        for (let index = 0; index < largo; index++) {
+            const element = elements[0];
             element.classList.add("medium");
             element.classList.remove("small");
         }
     } else if (estado == '1') {
         btn.value = '2';
         let elements = document.getElementsByClassName("medium");
-        for (let index = 0; index < elements.length; index++) {
-            const element = elements[index];
+        const largo = elements.length;
+        for (let index = 0; index <largo; index++) {
+            const element = elements[0];
             element.classList.add("large");
             element.classList.remove("medium");
         }
     } else if (estado == '2') {
         btn.value = '0';
         let elements = document.getElementsByClassName("large");
-        for (let index = 0; index < elements.length; index++) {
-            const element = elements[index];
+        const largo = elements.length;
+        for (let index = 0; index < largo; index++) {
+            const element = elements[0];
             element.classList.add("small");
             element.classList.remove("large");
         }
